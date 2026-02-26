@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumière — Handcrafted Candles</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">Lumière</a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__grain"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Small batch · Hand poured · Natural wax</p>
+      <h1 class="hero__title">Light that <em>lingers.</em></h1>
+      <p class="hero__sub">Every Lumière candle is crafted with intention — slow-burning soy wax, botanically-sourced scents, and vessels made to keep.</p>
+      <a href="shop.html" class="btn btn--light">Shop the Collection</a>
+    </div>
+    <div class="hero__candle" aria-hidden="true">
+      <div class="candle">
+        <div class="candle__body"></div>
+        <div class="candle__flame">
+          <div class="candle__flame-inner"></div>
+        </div>
+        <div class="candle__glow"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="features__grid">
+      <div class="feature reveal">
+        <div class="feature__icon">🌿</div>
+        <h3>Natural Ingredients</h3>
+        <p>100% coconut-soy wax blend, cotton wicks, and phthalate-free fragrance oils — nothing harmful, ever.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature__icon">🕯️</div>
+        <h3>60+ Hour Burn</h3>
+        <p>Our 8oz candles are formulated to burn cleanly for over 60 hours, giving you weeks of warmth.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature__icon">♻️</div>
+        <h3>Reusable Vessels</h3>
+        <p>Each candle arrives in a ceramic pot designed to be repurposed — as a succulent planter, brush holder, or keepsake jar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="products">
+    <div class="products__header reveal">
+      <span class="section-label">Bestsellers</span>
+      <h2>The Ones Everyone Loves</h2>
+    </div>
+    <div class="products__grid">
+      <div class="card reveal">
+        <div class="card__img card__img--amber"></div>
+        <div class="card__body">
+          <h3 class="card__name">Amber & Sandalwood</h3>
+          <p class="card__desc">Warm, grounding, woody. Like a bookshop on a rainy evening.</p>
+          <div class="card__footer">
+            <span class="card__price">$28</span>
+            <a href="shop.html" class="btn btn--small">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="card__img card__img--cedar"></div>
+        <div class="card__body">
+          <h3 class="card__name">Cedar & Smoke</h3>
+          <p class="card__desc">Deep, campfire-kissed cedar with a whisper of vetiver and black pepper.</p>
+          <div class="card__footer">
+            <span class="card__price">$28</span>
+            <a href="shop.html" class="btn btn--small">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="card__img card__img--linen"></div>
+        <div class="card__body">
+          <h3 class="card__name">Linen & Sea Salt</h3>
+          <p class="card__desc">Crisp, airy, clean. Like sun-dried sheets on a coastal morning.</p>
+          <div class="card__footer">
+            <span class="card__price">$28</span>
+            <a href="shop.html" class="btn btn--small">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="products__cta reveal">
+      <a href="shop.html" class="btn btn--outline">View All Candles</a>
+    </div>
+  </section>
+
+  <!-- QUOTE BANNER -->
+  <section class="quote">
+    <div class="quote__grain"></div>
+    <blockquote class="quote__text reveal">
+      "A candle loses nothing by lighting another candle."
+      <cite>— James Keller</cite>
+    </blockquote>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="testimonials__header reveal">
+      <span class="section-label">Reviews</span>
+      <h2>What Our Customers Say</h2>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonial reveal">
+        <div class="testimonial__stars">★★★★★</div>
+        <p>"The Amber & Sandalwood is absolutely divine. My apartment smells incredible for hours after burning."</p>
+        <cite>— Sarah M.</cite>
+      </div>
+      <div class="testimonial reveal">
+        <div class="testimonial__stars">★★★★★</div>
+        <p>"I ordered 6 as gifts and every single person reached out asking where to buy more. Perfect candles."</p>
+        <cite>— James T.</cite>
+      </div>
+      <div class="testimonial reveal">
+        <div class="testimonial__stars">★★★★★</div>
+        <p>"The packaging is stunning and the burn time is incredible. Worth every penny."</p>
+        <cite>— Priya K.</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter reveal">
+    <div class="newsletter__inner">
+      <span class="section-label">Stay in the glow</span>
+      <h2>Get 15% Off Your First Order</h2>
+      <p>Join our mailing list for new scents, seasonal drops, and candle care tips.</p>
+      <form class="newsletter__form" onsubmit="handleSubscribe(event)">
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit" class="btn btn--dark">Subscribe</button>
+      </form>
+      <p class="newsletter__note" id="newsletter-thanks" style="display:none;">✓ You're on the list! Check your inbox.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">Lumière</span>
+        <p>Hand-poured with love in Portland, OR.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Candles</a></li>
+          <li><a href="shop.html">Gift Sets</a></li>
+          <li><a href="shop.html">Seasonal</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Wholesale</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Candle Care</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Lumière Candle Co. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

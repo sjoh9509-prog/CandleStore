@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — Lumière Candles</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">Lumière</a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero__grain"></div>
+    <h1 class="page-hero__title">The Collection</h1>
+    <p>Every scent tells a story. Find yours.</p>
+  </div>
+
+  <section class="shop-section">
+    <div class="shop-filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="warm">Warm</button>
+      <button class="filter-btn" data-filter="fresh">Fresh</button>
+      <button class="filter-btn" data-filter="floral">Floral</button>
+      <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+    </div>
+
+    <div class="shop-grid">
+
+      <div class="card reveal" data-category="warm">
+        <div class="card__img card__img--amber"></div>
+        <div class="card__body">
+          <span class="card__tag">Warm</span>
+          <h3 class="card__name">Amber & Sandalwood</h3>
+          <p class="card__desc">Warm, grounding, woody. Like a bookshop on a rainy evening.</p>
+          <div class="card__footer">
+            <span class="card__price">$28</span>
+            <button class="btn btn--small" onclick="addToCart('Amber & Sandalwood', 28)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-category="warm">
+        <div class="card__img card__img--cedar"></div>
+        <div class="card__body">
+          <span class="card__tag">Warm</span>
+          <h3 class="card__name">Cedar & Smoke</h3>
+          <p class="card__desc">Deep, campfire-kissed cedar with a whisper of vetiver and black pepper.</p>
+          <div class="card__footer">
+            <span class="card__price">$28</span>
+            <button class="btn btn--small" onclick="addToCart('Cedar & Smoke', 28)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-category="fresh">
+        <div class="card__img card__img--linen"></div>
+        <div class="card__body">
+          <span class="card__tag">Fresh</span>
+          <h3 class="card__name">Linen & Sea Salt</h3>
+          <p class="card__desc">Crisp, airy, clean. Like sun-dried sheets on a coastal morning.</p>
+          <div class="card__footer">
+            <span class="card__price">$28</span>
+            <button class="btn btn--small" onclick="addToCart('Linen & Sea Salt', 28)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-category="floral">
+        <div class="card__img card__img--rose"></div>
+        <div class="card__body">
+          <span class="card__tag">Floral</span>
+          <h3 class="card__name">Damask Rose</h3>
+          <p class="card__desc">Soft, romantic petals over a base of white musk and cashmere.</p>
+          <div class="card__footer">
+            <span class="card__price">$30</span>
+            <button class="btn btn--small" onclick="addToCart('Damask Rose', 30)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-category="fresh">
+        <div class="card__img card__img--eucalyptus"></div>
+        <div class="card__body">
+          <span class="card__tag">Fresh</span>
+          <h3 class="card__name">Eucalyptus & Mint</h3>
+          <p class="card__desc">Invigorating, herbal clarity. Perfect for a morning ritual.</p>
+          <div class="card__footer">
+            <span class="card__price">$28</span>
+            <button class="btn btn--small" onclick="addToCart('Eucalyptus & Mint', 28)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-category="warm">
+        <div class="card__img card__img--vanilla"></div>
+        <div class="card__body">
+          <span class="card__tag">Warm</span>
+          <h3 class="card__name">Vanilla & Cardamom</h3>
+          <p class="card__desc">Spiced and sweet, like fresh chai on a cold morning.</p>
+          <div class="card__footer">
+            <span class="card__price">$28</span>
+            <button class="btn btn--small" onclick="addToCart('Vanilla & Cardamom', 28)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-category="seasonal">
+        <div class="card__img card__img--pine"></div>
+        <div class="card__body">
+          <span class="card__tag card__tag--seasonal">Seasonal</span>
+          <h3 class="card__name">Douglas Fir & Clove</h3>
+          <p class="card__desc">The smell of a forest cabin in the mountains in December.</p>
+          <div class="card__footer">
+            <span class="card__price">$32</span>
+            <button class="btn btn--small" onclick="addToCart('Douglas Fir & Clove', 32)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-category="floral">
+        <div class="card__img card__img--jasmine"></div>
+        <div class="card__body">
+          <span class="card__tag">Floral</span>
+          <h3 class="card__name">Jasmine & Ylang</h3>
+          <p class="card__desc">Heady florals softened by a creamy, tropical warmth.</p>
+          <div class="card__footer">
+            <span class="card__price">$30</span>
+            <button class="btn btn--small" onclick="addToCart('Jasmine & Ylang', 30)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Gift Sets -->
+  <section class="gift-section reveal">
+    <div class="gift-inner">
+      <span class="section-label">Give the gift of warmth</span>
+      <h2>Curated Gift Sets</h2>
+      <p>Three handpicked candles in a beautiful linen-wrapped box — perfect for any occasion.</p>
+      <div class="gift-cards">
+        <div class="gift-card">
+          <h4>The Cozy Set</h4>
+          <p>Amber & Sandalwood · Cedar & Smoke · Vanilla & Cardamom</p>
+          <span class="card__price">$78</span>
+          <button class="btn btn--small" onclick="addToCart('The Cozy Gift Set', 78)">Add to Cart</button>
+        </div>
+        <div class="gift-card">
+          <h4>The Fresh Set</h4>
+          <p>Linen & Sea Salt · Eucalyptus & Mint · Damask Rose</p>
+          <span class="card__price">$78</span>
+          <button class="btn btn--small" onclick="addToCart('The Fresh Gift Set', 78)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Toast -->
+  <div class="cart-toast" id="cart-toast">
+    <span id="cart-toast-msg">Added to cart!</span>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">Lumière</span>
+        <p>Hand-poured with love in Portland, OR.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Candles</a></li>
+          <li><a href="shop.html">Gift Sets</a></li>
+          <li><a href="shop.html">Seasonal</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Wholesale</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Candle Care</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Lumière Candle Co. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>

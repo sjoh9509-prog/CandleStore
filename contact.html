@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Lumière Candles</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav__logo">Lumière</a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="page-hero">
+    <div class="page-hero__grain"></div>
+    <h1 class="page-hero__title">Get in Touch</h1>
+    <p>We'd love to hear from you.</p>
+  </div>
+
+  <section class="contact-section">
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <h2>Let's Talk</h2>
+        <p>Questions about your order, a wholesale inquiry, or just want to tell us your favorite scent? We read every message.</p>
+
+        <div class="contact-detail">
+          <span class="contact-detail__label">Email</span>
+          <a href="mailto:hello@lumierecandles.com">hello@lumierecandles.com</a>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail__label">Studio Hours</span>
+          <span>Mon – Fri, 9am – 5pm PST</span>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail__label">Location</span>
+          <span>Portland, Oregon</span>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail__label">Response Time</span>
+          <span>Within 1–2 business days</span>
+        </div>
+
+        <div class="contact-socials">
+          <a href="#" class="contact-social">Instagram</a>
+          <a href="#" class="contact-social">Pinterest</a>
+          <a href="#" class="contact-social">TikTok</a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" id="contact-form" onsubmit="handleContact(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Elise Moreau" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="hello@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Select a topic...</option>
+              <option value="order">Order Question</option>
+              <option value="wholesale">Wholesale Inquiry</option>
+              <option value="press">Press & Collaboration</option>
+              <option value="other">Something Else</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--dark btn--full">Send Message</button>
+          <p class="form-success" id="form-success" style="display:none;">✓ Message sent! We'll be in touch shortly.</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="faq-header reveal">
+      <span class="section-label">Common Questions</span>
+      <h2>Before You Reach Out</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">How long does shipping take?</button>
+        <div class="faq-a">
+          <p>Orders ship within 2–3 business days from our Portland studio. Standard shipping takes 4–7 days. Expedited options are available at checkout.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">Do you offer refunds?</button>
+        <div class="faq-a">
+          <p>We accept returns of unused candles within 14 days of delivery. If your candle arrived damaged, please email us with a photo and we'll make it right immediately.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">Do you offer wholesale?</button>
+        <div class="faq-a">
+          <p>Yes! We work with select boutiques, spas, and gift shops. Minimum order is 24 units. Email us at wholesale@lumierecandles.com or select "Wholesale Inquiry" above.</p>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFaq(this)">Can I get a custom scent or label?</button>
+        <div class="faq-a">
+          <p>Custom orders are available for weddings, corporate gifts, and events with a minimum of 50 units and 6 weeks lead time. Contact us to discuss your vision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">Lumière</span>
+        <p>Hand-poured with love in Portland, OR.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Candles</a></li>
+          <li><a href="shop.html">Gift Sets</a></li>
+          <li><a href="shop.html">Seasonal</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Wholesale</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Candle Care</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Lumière Candle Co. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="#">Instagram</a>
+        <a href="#">Pinterest</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
