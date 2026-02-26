@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shop — Inhwa Candles</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <div class="announcement">
-    Free shipping on orders <strong>$65+</strong> &nbsp;·&nbsp;
-    <a href="shop.html">New: Bori & First Snow — limited seasonal drop ↗</a>
-  </div>
-
+  <div class="announcement">Free shipping on orders <strong>$65+</strong> &nbsp;·&nbsp; <a href="shop.html">New: Bori & First Snow — limited seasonal drop ↗</a></div>
   <nav class="nav" id="nav">
     <a href="index.html" class="nav__logo">인화<span class="logo-dot"></span></a>
     <ul class="nav__links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="shop.html" class="active">Shop</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li><li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="custom.html">Custom</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li>
     </ul>
     <a href="shop.html" class="btn nav__cta">Shop Now</a>
-    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav__hamburger" id="hamburger"><span></span><span></span><span></span></button>
   </nav>
-
   <div class="dancheong-border"></div>
 
   <div class="page-hero">
-    <div class="page-hero__grain"></div>
     <div class="page-hero__inner">
       <span class="section-label">The Collection</span>
       <h1 class="page-hero__title">Every scent is a place.</h1>
@@ -46,126 +34,101 @@
       <button class="filter-btn" data-filter="floral">Floral</button>
       <button class="filter-btn" data-filter="seasonal">Seasonal</button>
     </div>
-
     <div class="shop-grid">
 
       <div class="card reveal" data-category="warm">
-        <div class="card__stripe" style="background:linear-gradient(to bottom,#f4ac68,#fdd9a8)"></div>
-        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(135deg,#5a3010,#9a5820 40%,#c87830 70%,#e8aa60)"></div></div>
+        <div class="card__stripe" style="background:var(--temple-gold)"></div>
+        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(145deg,#fdf8ee,#f5dfa0,#e8be58)"></div></div>
         <div class="card__body">
           <span class="card__tag card__tag--warm">Warm</span>
           <h3 class="card__name">Jeju Citrus & Hinoki</h3>
           <p class="card__notes">Tangerine · Cypress · Sea air</p>
           <p class="card__desc">Bright tangerine from Jeju's volcanic orchards layered over cool Japanese cypress. Uplifting and grounding at once.</p>
-          <div class="card__footer">
-            <span class="card__price">$28</span>
-            <button class="btn btn--small" onclick="addToCart('Jeju Citrus & Hinoki', 28)">Add to Cart</button>
-          </div>
+          <div class="card__footer"><span class="card__price">$28</span><button class="btn btn--small" onclick="addToCart('Jeju Citrus & Hinoki',28)">Add to Cart</button></div>
         </div>
       </div>
 
       <div class="card reveal" data-category="warm">
-        <div class="card__stripe" style="background:linear-gradient(to bottom,#1a7a6e,#6a9a60)"></div>
-        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(135deg,#1a3020,#2a5535 40%,#3a7048 70%,#6a9a60)"></div></div>
+        <div class="card__stripe" style="background:var(--temple-teal)"></div>
+        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(145deg,#eaf6f2,#a8ddd4,#5ab8a8)"></div></div>
         <div class="card__body">
           <span class="card__tag card__tag--warm">Warm</span>
           <h3 class="card__name">Pine Resin & Black Tea</h3>
           <p class="card__notes">Mountain pine · Nokcha · Cold stone</p>
           <p class="card__desc">Resinous mountain pine meets dark-steeped nokcha and cool granite stone. Seoraksan at dusk.</p>
-          <div class="card__footer">
-            <span class="card__price">$28</span>
-            <button class="btn btn--small" onclick="addToCart('Pine Resin & Black Tea', 28)">Add to Cart</button>
-          </div>
+          <div class="card__footer"><span class="card__price">$28</span><button class="btn btn--small" onclick="addToCart('Pine Resin & Black Tea',28)">Add to Cart</button></div>
         </div>
       </div>
 
       <div class="card reveal" data-category="fresh">
-        <div class="card__stripe" style="background:linear-gradient(to bottom,#82b7e3,#b8d8f4)"></div>
-        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(135deg,#3a6068,#2a8888 40%,#3aa8a0 70%,#90d0c8)"></div></div>
+        <div class="card__stripe" style="background:var(--temple-blue)"></div>
+        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(145deg,#edf4fc,#b8d4f0,#7aace0)"></div></div>
         <div class="card__body">
           <span class="card__tag card__tag--fresh">Fresh</span>
           <h3 class="card__name">White Magnolia & Rice Steam</h3>
           <p class="card__notes">Magnolia · Rice · Mineral air</p>
           <p class="card__desc">Delicate magnolia, warm rice steam, cool mineral air. The scent of a spring morning along the Han River.</p>
-          <div class="card__footer">
-            <span class="card__price">$28</span>
-            <button class="btn btn--small" onclick="addToCart('White Magnolia & Rice Steam', 28)">Add to Cart</button>
-          </div>
+          <div class="card__footer"><span class="card__price">$28</span><button class="btn btn--small" onclick="addToCart('White Magnolia & Rice Steam',28)">Add to Cart</button></div>
         </div>
       </div>
 
       <div class="card reveal" data-category="floral">
-        <div class="card__stripe" style="background:linear-gradient(to bottom,#f4ac68,#fdd4a0)"></div>
-        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(135deg,#7a2020,#b04030 40%,#d06840 70%,#e8a870)"></div></div>
+        <div class="card__stripe" style="background:var(--temple-pink)"></div>
+        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(145deg,#fdf0f0,#f0c0b8,#e08878)"></div></div>
         <div class="card__body">
           <span class="card__tag card__tag--floral">Floral</span>
           <h3 class="card__name">Chrysanthemum & Honey</h3>
           <p class="card__notes">Chrysanthemum · Wildflower honey · Musk</p>
           <p class="card__desc">Soft white chrysanthemum steeped in wildflower honey and warm musk. Like autumn in Gyeongju.</p>
-          <div class="card__footer">
-            <span class="card__price">$30</span>
-            <button class="btn btn--small" onclick="addToCart('Chrysanthemum & Honey', 30)">Add to Cart</button>
-          </div>
+          <div class="card__footer"><span class="card__price">$30</span><button class="btn btn--small" onclick="addToCart('Chrysanthemum & Honey',30)">Add to Cart</button></div>
         </div>
       </div>
 
       <div class="card reveal" data-category="fresh">
-        <div class="card__stripe" style="background:linear-gradient(to bottom,#6c9968,#a0c898)"></div>
-        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(135deg,#1a4a30,#2a6848 40%,#3a8858 70%,#70b880)"></div></div>
+        <div class="card__stripe" style="background:var(--temple-green)"></div>
+        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(145deg,#eef5ef,#b8d8bc,#78aa80)"></div></div>
         <div class="card__body">
           <span class="card__tag card__tag--fresh">Fresh</span>
           <h3 class="card__name">Ssuk & Sea Mist</h3>
           <p class="card__notes">Mugwort · Ocean salt · Green herb</p>
           <p class="card__desc">Mugwort (ssuk) — earthy, herbal, ancient — lifted by a drift of ocean salt from the Yellow Sea coast.</p>
-          <div class="card__footer">
-            <span class="card__price">$28</span>
-            <button class="btn btn--small" onclick="addToCart('Ssuk & Sea Mist', 28)">Add to Cart</button>
-          </div>
+          <div class="card__footer"><span class="card__price">$28</span><button class="btn btn--small" onclick="addToCart('Ssuk & Sea Mist',28)">Add to Cart</button></div>
         </div>
       </div>
 
       <div class="card reveal" data-category="warm">
-        <div class="card__stripe" style="background:linear-gradient(to bottom,#fecf03,#ffe866)"></div>
-        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(135deg,#503010,#884820 40%,#b07030 70%,#d8a850)"></div></div>
+        <div class="card__stripe" style="background:var(--temple-gold)"></div>
+        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(145deg,#fdf8e4,#f0d880,#d8b828)"></div></div>
         <div class="card__body">
           <span class="card__tag card__tag--warm">Warm</span>
           <h3 class="card__name">Omija & Warm Ginger</h3>
           <p class="card__notes">Omija berry · Ginger root · Amber</p>
-          <p class="card__desc">The five-flavored omija berry — tart, sweet, salty, bitter, spicy — warmed with ginger root and amber. Complex and unforgettable.</p>
-          <div class="card__footer">
-            <span class="card__price">$28</span>
-            <button class="btn btn--small" onclick="addToCart('Omija & Warm Ginger', 28)">Add to Cart</button>
-          </div>
+          <p class="card__desc">The five-flavored omija berry — tart, sweet, salty, bitter, spicy — warmed with ginger root and amber.</p>
+          <div class="card__footer"><span class="card__price">$28</span><button class="btn btn--small" onclick="addToCart('Omija & Warm Ginger',28)">Add to Cart</button></div>
         </div>
       </div>
 
       <div class="card reveal" data-category="seasonal">
-        <div class="card__stripe" style="background:linear-gradient(to bottom,#6c9968,#9ac098)"></div>
-        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(135deg,#102020,#1a3a2a 40%,#2a5838 70%,#507050)"></div></div>
+        <div class="card__stripe" style="background:var(--temple-blue)"></div>
+        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(145deg,#eef4f2,#c0d8cc,#88b0a0)"></div></div>
         <div class="card__body">
           <span class="card__tag card__tag--seasonal">Seasonal</span>
           <h3 class="card__name">Bori & First Snow</h3>
           <p class="card__notes">Toasted barley · Juniper · Cold air</p>
           <p class="card__desc">Toasted barley, cold-clean air, and juniper berry. The smell of Inwang Mountain on the first snowfall.</p>
-          <div class="card__footer">
-            <span class="card__price">$32</span>
-            <button class="btn btn--small" onclick="addToCart('Bori & First Snow', 32)">Add to Cart</button>
-          </div>
+          <div class="card__footer"><span class="card__price">$32</span><button class="btn btn--small" onclick="addToCart('Bori & First Snow',32)">Add to Cart</button></div>
         </div>
       </div>
 
       <div class="card reveal" data-category="floral">
-        <div class="card__stripe" style="background:linear-gradient(to bottom,#82b7e3,#c0d8f4)"></div>
-        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(135deg,#402880,#6040a8 40%,#9870c8 70%,#c8a8e8)"></div></div>
+        <div class="card__stripe" style="background:var(--temple-pink)"></div>
+        <div class="card__img"><div class="card__img-inner" style="background:linear-gradient(145deg,#f8f0fc,#d8b8f0,#b888e0)"></div></div>
         <div class="card__body">
           <span class="card__tag card__tag--floral">Floral</span>
           <h3 class="card__name">Lotus & Sandalwood</h3>
           <p class="card__notes">Sacred lotus · Sandalwood · Incense</p>
           <p class="card__desc">Sacred lotus blossom drifting over a warm, meditative sandalwood base. The stillness of a temple courtyard.</p>
-          <div class="card__footer">
-            <span class="card__price">$30</span>
-            <button class="btn btn--small" onclick="addToCart('Lotus & Sandalwood', 30)">Add to Cart</button>
-          </div>
+          <div class="card__footer"><span class="card__price">$30</span><button class="btn btn--small" onclick="addToCart('Lotus & Sandalwood',30)">Add to Cart</button></div>
         </div>
       </div>
 
@@ -178,73 +141,26 @@
     <div class="gift-inner">
       <span class="section-label">Give the gift of calm</span>
       <h2>Curated Gift Sets</h2>
-      <p>Three handpicked candles wrapped in hanji-textured paper and tied with a natural ramie ribbon. The Korean art of giving, made fragrant.</p>
+      <p>Three handpicked candles wrapped in hanji-textured paper and tied with a natural ramie ribbon.</p>
       <div class="gift-cards">
-        <div class="gift-card">
-          <h4>The Mountain Set</h4>
-          <p>Pine Resin & Black Tea · Bori & First Snow · Omija & Warm Ginger</p>
-          <span class="card__price">$78</span>
-          <button class="btn btn--small" onclick="addToCart('The Mountain Gift Set', 78)">Add to Cart</button>
-        </div>
-        <div class="gift-card">
-          <h4>The Garden Set</h4>
-          <p>White Magnolia & Rice Steam · Chrysanthemum & Honey · Lotus & Sandalwood</p>
-          <span class="card__price">$78</span>
-          <button class="btn btn--small" onclick="addToCart('The Garden Gift Set', 78)">Add to Cart</button>
-        </div>
+        <div class="gift-card"><h4>The Mountain Set</h4><p>Pine Resin & Black Tea · Bori & First Snow · Omija & Warm Ginger</p><span class="card__price">$78</span><button class="btn btn--small" onclick="addToCart('The Mountain Gift Set',78)" style="margin-top:0.75rem">Add to Cart</button></div>
+        <div class="gift-card"><h4>The Garden Set</h4><p>White Magnolia & Rice Steam · Chrysanthemum & Honey · Lotus & Sandalwood</p><span class="card__price">$78</span><button class="btn btn--small" onclick="addToCart('The Garden Gift Set',78)" style="margin-top:0.75rem">Add to Cart</button></div>
       </div>
     </div>
   </section>
 
-  <div class="cart-toast" id="cart-toast">
-    <span id="cart-toast-msg">Added to cart!</span>
-  </div>
-
+  <div class="cart-toast" id="cart-toast"><span id="cart-toast-msg">Added to cart!</span></div>
   <div class="dancheong-border"></div>
 
   <footer class="footer">
     <div class="footer__top">
-      <div class="footer__brand">
-        <span class="footer__logo">인화<span class="logo-dot"></span></span>
-        <p>Hand-poured in Portland, OR.<br>Rooted in Korea.</p>
-        <span class="footer__tagline">아름다운 조화 — Beautiful harmony</span>
-      </div>
-      <div class="footer__links">
-        <h4>Shop</h4>
-        <ul>
-          <li><a href="shop.html">All Candles</a></li>
-          <li><a href="shop.html">Gift Sets</a></li>
-          <li><a href="shop.html">Seasonal</a></li>
-        </ul>
-      </div>
-      <div class="footer__links">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">Our Story</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="#">Wholesale</a></li>
-        </ul>
-      </div>
-      <div class="footer__links">
-        <h4>Help</h4>
-        <ul>
-          <li><a href="#">Shipping & Returns</a></li>
-          <li><a href="#">Candle Care</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
+      <div class="footer__brand"><span class="footer__logo">인화<span class="logo-dot"></span></span><p>Hand-poured in Portland, OR.<br>Rooted in Korea.</p><span class="footer__tagline">아름다운 조화 — Beautiful harmony</span></div>
+      <div class="footer__links"><h4>Shop</h4><ul><li><a href="shop.html">All Candles</a></li><li><a href="custom.html">Custom Fragrance</a></li><li><a href="shop.html">Gift Sets</a></li></ul></div>
+      <div class="footer__links"><h4>Company</h4><ul><li><a href="about.html">Our Story</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Wholesale</a></li></ul></div>
+      <div class="footer__links"><h4>Help</h4><ul><li><a href="#">Shipping & Returns</a></li><li><a href="#">Candle Care</a></li><li><a href="#">FAQ</a></li></ul></div>
     </div>
-    <div class="footer__bottom">
-      <p>© 2025 Inhwa Candle Co. All rights reserved.</p>
-      <div class="footer__socials">
-        <a href="#">Instagram</a>
-        <a href="#">Pinterest</a>
-        <a href="#">TikTok</a>
-      </div>
-    </div>
+    <div class="footer__bottom"><p>© 2025 Inhwa Candle Co. All rights reserved.</p><div class="footer__socials"><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">TikTok</a></div></div>
   </footer>
-
-  <script src="js/main.js"></script>
-  <script src="js/shop.js"></script>
+  <script src="js/main.js"></script><script src="js/shop.js"></script>
 </body>
 </html>
